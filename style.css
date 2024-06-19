@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --text-font: 15px;
+    --big-font: 45px;
+    --h2-font: 35px;
+    --text-color: #fff;
+    --bg-color: #000;
+    --sans-font: 'Poppins', sans-serif;
+    --serif-font: 'Playfair Display', serif;
+}
+body{
+    background: var(--bg-color);
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px ;
+    margin-left: -20px;
+    transition: ease .4s;
+}
+.logo{
+    position: relative;
+    color: var(--text-color);
+    font-family: var(--sans-font);
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    font-family: var(--sans-font);
+    padding: 5px 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+header ul li a:hover{
+    transform: translateY(5px);
+    transition: ease-in-out .3s;
+}
+.home{
+    background-image: url(bg.png);
+    position: relative;
+    width: 100%; height: 120vh;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    text-align: center;
+}
+.home-text{
+    margin-top: -150px;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    color: var(--text-color);
+    font-family: var(--serif-font);
+}
+.home-text p{
+    color: var(--text-color);
+    font-family: var(--sans-font);
+    font-size: var(--text-font);
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.home-text a{
+    font-family: var(--sans-font);
+    color: #0a7f35;
+    background: #ffffffbf;
+    border: 2px solid #ffffffbf;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.home-text a:hover{
+    background: rgba(10, 125, 10, 0.6);
+    color: #ffffffbf;
+    border: 2px solid #ffffffbf;
+    transition: ease-in-out .5s;
+}
+.explore{
+    position: relative;
+    width: 100%; height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center ;
+}
+.text{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.text h2{
+    color: var(--text-color);
+    font-family: var(--sans-font);
+    font-size: var(--h2-font);
+    font-weight: 400;
+}
+.text p{
+    color: var(--text-color);
+    margin-top: 10px;
+    font-size: var(--text-font);
+    text-transform: lowercase;
+    font-family: var(--sans-font);
+}
+.explore-row{
+    border: 3px solid #0a7f35;
+    position: relative;
+    width: 100%; height: 300px;
+    margin-top: 50px;
+    display: flex;
+
+}
+.thumb{
+    position: absolute;
+    left: 50%; width: 100%;
+    height: 100px; bottom: 0;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Glass Effect */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.thumb li{
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.thumb li:hover{
+    transform: translateY(-10px);
+}
+.thumb li img{
+    max-width: 50px;
+    border-radius: 10px;
+}
+.social{
+    position: absolute;
+    top: 50%; right: 40px;
+    transform: translateY(-50%);
+    align-items: center;
+    flex-direction: column;
+}
+.social li a{
+    display: inline-block;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.social li a:hover{
+    transform: scale(1.5);
+    transition: ease-in-out .5s;
+}

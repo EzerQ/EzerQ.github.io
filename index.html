@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZQSR Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#explore">Explore</a></li>
+        </ul>
+        <a href="#" class="logo">ZQSR Travel</a>
+        <ul>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </header>
+    <!-- NAVBAR END -->
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Traveling Wonderful Indonesia</h1>
+            <p>Refreshing your brain</p>
+            <a href="#explore">Let's go now</a>
+        </div>
+    </section>
+    <!-- HOME END -->
+
+    <!-- EXPLORE -->
+    <section class="explore" id="explore">
+        <div class="text">
+            <h2>Explore Indonesia</h2>
+            <p>WE SHALL NOT CEASE FROM EXPLORATION, AND THE END OF ALL OUR EXPLORING <br>WILL BE TO ARRIVE WHERE WE STARTED AND KNOW THE PLACE FOR THE FIRST TIME</p>
+        </div>
+        <div class="explore-row">
+            <!-- BALI -->
+            <div 
+        </div>
+    </section>
+    <!-- EXPLORE END -->
+
+    <!-- FOOTER -->
+    <!-- <div class="footer">
+        <ul class="thumb">
+            <li><img src="des1.png" onclick="imgSlider('bg1.png')"></li>
+            <li><img src="des2.png" onclick="imgSlider('bg2.png')"></li>
+            <li><img src="des3.png" onclick="imgSlider('bg3.png')"></li>
+        </ul>
+        <ul class="social">
+            <li><a class='bx bxl-meta'></a></li>
+            <li><a class='bx bxl-facebook-circle'></a></li>
+            <li><a class='bx bxl-instagram-alt'></a></i></li>
+            <li><a class='bx bxl-twitter'></a></li>
+        </ul>
+    </div> -->
+    <!-- FOOTER END -->
+
+    <!-- JS SCRIPT -->
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.bgg').src = anything;
+        }
+        const header = document.querySelector("header");
+
+        window.addEventListener("scroll", function () {
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        };
+
+        window.onscroll = () => {
+            menu.classList.remove('bx-x');
+            navbar.classList.remove('open');
+        }
+    </script>
+    <!-- JS SCRIPT END -->
+</body>
+
+</html>
